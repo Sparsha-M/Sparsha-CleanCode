@@ -1,0 +1,39 @@
+Review1.cs
+Comments
+variable name has to be changed to elapsedTimeInDays
+remove the comments
+ 
+Review2.cs
+change the varibale name to employees
+GetFromService() has to be renamed to GetEmployees()
+remove the comments
+add service layer
+ 
+Review3.cs
+rename iCounter to counter
+rename strFullname to fullname
+rename dModifiedDate to modifiedDate
+ 
+Review4.cs
+rename the parameter names to day and amount.
+ 
+Review5.cs
+all constant variables should follow one format
+ 
+rename Artists to artists
+ 
+change methis name Restore_database() to RestoreDatabase()
+change animal to Animal
+change Alpaca to meaning full name
+follow the pascal casing for method and class names
+ 
+review6
+remove comments
+public variable name should be in pascal.
+rename sWorkDate to WorkDate
+rename  modTime to ModiifedTime
+ 
+Review7
+change workingdays to days
+change workinghours to hours
+use camelCase for variable names
