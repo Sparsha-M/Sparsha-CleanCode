@@ -1,0 +1,59 @@
+review1.cs
+
+- multiple responsiblities. session initialization and user exists is also checked in same method
+checkPassword method name has to be CheckPassword
+User check has to be there in separate method
+
+
+Review2.cs
+side effect is done here
+name varibale is updated inside the method , which should not be done.
+
+Review3.cs
+rename the function name to DomNodeExist()
+
+Review4.cs
+no default handling in te switch case
+polymorphism
+return type are not proper.. or change method name accordingly 
+magic numbers are used directly.
+replace the magic numbers or hard coded values to constants
+
+Review5
+- avoid use of typeof()
+- Gettype() is done in each if cases, aviod , get the type once in the begining
+- move texas string to constant
+
+Review6.cs
+
+name of the method and responsibility is different.
+change to meaning full name
+bool can be removed by breaking to two methods.
+CreateTempTouch(name) and Touch(name)
+
+
+Review7.cs
+avoid singleton as we can't mock
+
+Review8.cs
+multiple responsiblity variables 
+cancellable can be moved to another method call
+CreateMenu contains irrelevant parameters, CreateMenu can only accept menu names and create a menu.
+instead of split of properties MenuItem type can be created and passed.
+
+Review9.cs
+Methos doing mucltiple checks and then sending mail, which is not correct. multiple responsiblity again.
+split the responsibilty by FindClient(client);
+then CheckActive in another method and then SendEmail
+Method name can also be mamed as SendEmailToClients(string[] clients)
+directly accessing the db, it's not using service
+
+Review11.py
+split logic into different methods naming.. validation, createCredential, createRespone()
+wrong abstraction
+
+Review12.cs
+magic string
+
+Review13.cs
+remove dead code
