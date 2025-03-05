@@ -1,0 +1,52 @@
+review1.cs
+too many nesting, change the code to public bool IsShopOpen(string day)
+{
+    if (string.IsNullOrEmpty(day))
+    {
+        return false;
+    }
+
+    var openDays = new HashSet<string> { "friday", "saturday", "sunday" };
+    return openDays.Contains(day.ToLower());
+}
+
+review3.cs
+too many nesting, which can be simplied to.
+
+public long Fibonacci(int n)
+{
+    if (n >= 50)
+    {
+        throw new System.Exception("Not supported");
+    }
+
+    if (n == 0)
+    {
+        return 0;
+    }
+
+    if (n == 1)
+    {
+        return 1;
+    }
+
+    return Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+
+review4.cs
+
+rename the varibale l to location
+change to foreach loop
+change the method names to correct one
+declare and use immediately  instead of assigning and keeping it in the begining, variable li.
+rename li to item
+
+review5.cs
+
+No magic number usage and remove comment
+
+Review6.cs
+Car is redundant in the public property
+
+review9.cs
+default parameter
