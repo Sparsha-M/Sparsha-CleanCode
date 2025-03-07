@@ -8,7 +8,7 @@ public class TemplateEngine
 
     public string Evaluate()
     {
-        return $"Hello {myName}{myCompany}";
+        return $"Hello {myName} {myCompany}";
     }
     
     public void SetName(string name)
