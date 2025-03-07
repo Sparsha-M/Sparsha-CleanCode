@@ -12,22 +12,21 @@ public class TemplateEngineTests
     }
 
     [TestCase("Sree")]
-    public void GivenOneVariable_Evaluate_TemplateEngine(string name)
+    public void ShouldWorkForOneVariable(string name)
     {
         //Arrange
-        TemplateEngine templateEngine   = new TemplateEngine();
+        TemplateEngine templateEngine = new TemplateEngine();
         templateEngine.SetName(name);
 
         //Act
         var result = templateEngine.Evaluate();
-
-
+        
         //Assert
         Assert.That("Hello Sree", Is.EqualTo(result));
     }
 
     [TestCase("SPARSHA", "Siemens_Healthcare")]
-    public void GivenTwoVariables_Evaluate_TemplateEngine(string name, string company)
+    public void ShouldWorkForTwoVariable(string name, string company)
     {
         //Arrange
         TemplateEngine templateEngine = new TemplateEngine();
